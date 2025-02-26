@@ -188,6 +188,9 @@ if command -v xclip > /dev/null; then
   alias cb2-strip-r='xclip -o -selection secondary |
     sed ''s%[ \t]\+$%%'' |
     xclip -i -selection secondary'
+  alias cbcopy='cb'
+  alias cbpaste='cb -o'
+  alias cbclfmt='cbpaste | cb'
 fi
 
 
