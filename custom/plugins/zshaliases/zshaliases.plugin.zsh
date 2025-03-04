@@ -26,6 +26,9 @@ alias rmdir='rmdir -v'
 alias vdir='vdir --color=auto'
 alias vim='vim -p'
 alias nvim='nvim -p'
+alias df='df -h'
+alias dfx='df -x tmpfs -x devtmpfs -x squashfs'
+
 function tree() {
   emulate -LR zsh
   local ignore_from=("${XDG_CONFIG_HOME:-${HOME}/.config}"/git/ignore(-.N) .gitignore(.N))
